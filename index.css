@@ -1,0 +1,80 @@
+
+  /* Fondo  */
+body {
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Tarjeta con efecto flotante */
+  .efecto-flotar {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .efecto-flotar:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Resultado */
+  .resultado p {
+    animation: parpadeo 1.5s infinite;
+  }
+  .card {
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    max-width: 600px; /* Ancho máximo para evitar que sea demasiado grande */
+    margin-left: 20px;
+    margin-bottom: 20px;
+    background-color: #f0f8ff; /* Color de fondo */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 10px; /* Espaciado interno */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+  }
+  
+  .card .card-title {
+    color: #007bff; /* Cambia el color del texto del título */
+    font-weight: bold; /* Asegura que el texto sea negrita */
+  }
+  
+  .card .card-text {
+    font-size: 1rem; /* Ajusta el tamaño del texto para que sea más legible */
+    color: #333; /* Color del texto */
+  }
+  @keyframes parpadeo {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    body {
+     
+        padding-right: 25px;
+       
+    }
+
+    .card {
+        padding: 15px; /* Ajustar el padding en pantallas más pequeñas */
+        max-width: 100%; /* Hacer que la tarjeta ocupe todo el ancho disponible */
+        margin-top: 20px;
+    }
+    
+
+    .card-title {
+        font-size: 1.5rem; /* Aumentar el tamaño del título para pantallas pequeñas */
+    }
+
+    .card-text {
+        font-size: 0.9rem; /* Ajustar el tamaño del texto para hacerlo más legible */
+    }
+
+    .container {
+        width: 100%; /* Asegurar que el contenedor ocupe todo el ancho */
+    }
+}
