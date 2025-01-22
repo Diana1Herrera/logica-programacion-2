@@ -21,4 +21,4 @@ Este proyecto es una calculadora visual e interactiva para convertir temperatura
 
 1. Clona este repositorio:
    ```bash
-   git clone https://github.com/Diana1Herrera/conversor-temperaturas-bootstrap.git
+   git clone https://github.com/Diana1Herrera/logica-programacion-2.git
